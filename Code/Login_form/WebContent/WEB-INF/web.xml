@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+  <display-name>Login_form</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+  <servlet>
+  <servlet-name>Servlet1</servlet-name>  
+  <servlet-class>Servlet1</servlet-class>  
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Servlet1</servlet-name>  
+  <url-pattern>/servlet/Servlet1/*</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>Servlet2</servlet-name>  
+  <servlet-class>Servlet2</servlet-class> 
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Servlet2</servlet-name>  
+  <url-pattern>/servlet/Servlet2</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>Profile</servlet-name>  
+  <servlet-class>Profile</servlet-class> 
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Profile</servlet-name>  
+  <url-pattern>/servlet/Profile</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  <servlet-name>Plumbers</servlet-name>  
+  <servlet-class>Plumbers</servlet-class> 
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Plumbers</servlet-name>  
+  <url-pattern>/servlet/Plumbers</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>Update</servlet-name>  
+  <servlet-class>Update</servlet-class> 
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Update</servlet-name>  
+  <url-pattern>/servlet/Update/*</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>Services</servlet-name>  
+  <servlet-class>Services</servlet-class> 
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Services</servlet-name>  
+  <url-pattern>/servlet/Services</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+  <servlet-name>Sending_req</servlet-name>  
+  <servlet-class>Sending_req</servlet-class> 
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Sending_req</servlet-name>  
+  <url-pattern>/servlet/Sending_req</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>Req_accepted</servlet-name>  
+  <servlet-class>Req_accepted</servlet-class> 
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Req_accepted</servlet-name>  
+  <url-pattern>/servlet/Req_accepted</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+  <servlet-name>Req_decline</servlet-name>  
+  <servlet-class>Req_decline</servlet-class> 
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Req_decline</servlet-name>  
+  <url-pattern>/servlet/Req_decline</url-pattern>
+  </servlet-mapping>
+  
+      <servlet>
+  <servlet-name>Req_abort</servlet-name>  
+  <servlet-class>Req_abort</servlet-class> 
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Req_abort</servlet-name>  
+  <url-pattern>/servlet/Req_abort</url-pattern>
+  </servlet-mapping>
+  
+        <servlet>
+  <servlet-name>Req_pending</servlet-name>  
+  <servlet-class>Req_pending</servlet-class> 
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Req_abort</servlet-name>  
+  <url-pattern>/servlet/Req_pending</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>Service_completed</servlet-name>
+  <servlet-class>Service_completed</servlet-class>
+  </servlet>
+  
+    <servlet-mapping>
+  <servlet-name>Service_completed</servlet-name>  
+  <url-pattern>/servlet/Service_completed</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+  <servlet-name>Admin</servlet-name>
+  <servlet-class>Admin</servlet-class>
+  </servlet>
+  
+    <servlet-mapping>
+  <servlet-name>Admin</servlet-name>  
+  <url-pattern>/servlet/Admin</url-pattern>
+  </servlet-mapping>
+
+</web-app>

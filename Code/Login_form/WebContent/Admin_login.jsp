@@ -1,0 +1,230 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login</title>
+  <link rel="shortcut icon" href="https://drive.google.com/thumbnail?id=1FgxXQfCUS6_Jm0RZ8MqS8OU5mmTrh8Rr">
+</head>
+<style>
+  @charset "ISO-8859-1";
+#background{
+    height:100vh;
+    background:#7b7b7b;
+    background-repeat: no-repeat;
+    padding-bottom: 50px;
+    padding-top: 100px;
+    padding-left: 540px;
+    padding-right: 100px;
+    
+}
+body{
+    margin: 0%;
+    overflow: hidden;
+}
+
+.div0{
+    width: 465px;
+    height: 520px;  
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255, 1) ;
+    
+}
+.div1{
+  height:95px;
+  width:360px;
+  position: relative;
+  left: 50px;
+  top:90px;
+}
+.div2{
+  height:95px;
+  width:360px;
+  position: relative;
+  left: 50px;
+  top:120px;
+}
+.div3{
+  height:95px;
+  width:410px;
+  position: relative;
+  left: 50px;
+  top:160px;
+}
+.div4{
+  position:relative;
+  left:255px;
+  top:160px;
+  height: 65px;
+  width:160px;
+}
+h5{
+  position: relative;
+  left:265px;
+  top:140px;
+}
+.column {
+  float:left;
+  width: 50%;
+  height: 84px; 
+}
+.label1{
+    position: relative;
+    left:50px;
+    top:50px;
+    font-family: "Lucida Console", Times, serif;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.label2{
+    font-family: "Lucida Console", Times, serif;
+    font-weight: bold;
+    font-size: 25px;
+}
+.textpane{
+    background-color: #F9f6f9;
+    height:50px;
+    width:350px;
+    border-style: inset;
+    border-radius: 5px;
+}
+.textarea{
+    background-color: #F9f6f9;
+    height:80px;
+    width:577px;
+    border-style:inset;
+    border-width:3px;
+    border-radius: 5px;
+}
+.container {
+    font-family: "Lucida Console", Times, serif;
+    font-weight: bold;
+    font-size: 25px;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .container input {
+    position: relative;
+    opacity: 0;
+    cursor: pointer;
+  }
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  .container input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  .container .checkmark:after {
+       top: 9px;
+      left: 9px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: white;
+  }
+
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background:black;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 10px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  .button:hover span {
+    padding-right: 25px;
+  
+  }
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+    
+  }
+</style>
+<body> 
+<form action="http://localhost:8080/Login_form/servlet/Admin" method ="post">
+<!--Background-->
+<div id="background">
+<!--Container-->
+<div class="div0">
+
+<label class="label1">Login</label>
+
+<div class="div1">
+
+  <div class="column">
+    <label class="label2">Username</label><br><br>
+    <input class="textpane" type="text" name="phone" placeholder="Enter Phone Number" required>
+  </div>
+</div>
+
+<div class="div2">
+  
+  <div class="column">
+    <label class="label2">Password</label><br><br>
+    <input class="textpane" type="password" name="password" placeholder="Enter Password" required>
+  </div>
+
+</div>
+
+<div class="div4">
+
+  <button class="button" type="submit" style="vertical-align:middle"><span>Login</span></button>
+
+</div>
+
+<a href="http://localhost:8080/Login_form/index3.html"><h5>Forget Password</h5></a>
+
+</div>
+
+</div>
+</form>
+
+</body>
+</html>
